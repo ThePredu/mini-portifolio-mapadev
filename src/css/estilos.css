@@ -1,0 +1,143 @@
+body{
+    background-image: url(../imagens/fundo-site-mexe.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'VT323', monospace;
+    color: #00FF7F;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    padding: 30px;
+}
+
+.cartao{
+    background-color: #070d12;
+    width: 380px;
+    border: 2px solid #ADFF2F;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.abas img{
+    width: 50px;
+}
+
+.cartao .minhas-informacoes{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cartao .minhas-informacoes img {
+    border-radius: 50px;
+    border: 4px solid #A020F0;
+    width: 100px;
+    height: 100px;
+}
+
+.cartao .minhas-informacoes .nome{
+    font-size: 28px;
+}
+
+.cartao .minhas-informacoes .cargo {
+    font-size: 22px;
+    color: #90EE90;
+}
+
+.cartao .conteudo{
+    margin-top: 15px;
+}
+
+.cartao .abas{
+    display: flex;
+}
+
+.cartao .abas .aba{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.cartao .abas .img {
+    width: 40px;
+}
+
+.cartao .abas .aba.selecionado{
+    background-color: #262626;
+}
+
+.cartao .informacoes-abas{
+    background-color: #262626;
+}
+
+.cartao .abas .aba:hover{
+    background-color: #262626;
+}
+
+.informacoes-abas .informacao{
+    min-height: 130px;
+    padding: 15px;
+    display: none;
+}
+
+.informacoes-abas .informacao.selecionado{
+    display: block;
+}
+
+.informacoes-abas .sub-titulo{
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.informacoes-abas .descricao{
+    font-size: 18px;
+    max-height: 180px;
+}
+
+.informacoes-abas .descricao span{
+    color: #FF1493;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.redes-sociais li a{
+    background-color: red;
+    width: 250px;
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: opacity 0.3s;
+}
+
+.redes-sociais .instagram{
+    background-color:#FF1493 ;
+}
+
+.redes-sociais .github{
+    background-color: #545454;
+}
+
+.redes-sociais li a:hover{
+    opacity: 0.8;
+}
+
+
